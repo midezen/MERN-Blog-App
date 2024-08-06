@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
-import Post from "./models/Post";
+import Post from "./models/Post.js";
+import connectDB from "./utils/connectDB.js";
+
+connectDB();
 
 const app = express();
 const corsOptions = {
